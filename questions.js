@@ -49,7 +49,13 @@ var removeNullAndFalseElements = function(array) {
 }
 
 var reverseWordsInArray = function(array) {
-    return array;
+    var resultArray = [];
+    for (i = 0; i < array.length; i++)
+    {
+        var reverseWords = Array.from(array[i]).reverse().join('');
+        resultArray.push(reverseWords);
+    }
+    return resultArray;
 }
 
 var everyPossiblePair = function(array) {
