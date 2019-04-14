@@ -104,7 +104,7 @@ var sortByLastLetter = function(array) {
 }
 
 var getFirstHalf = function(string) {
-    return string.substr(0, 3);
+    return string.substring(0, 3);
 }
 
 var makeNegative = function(number) {
@@ -112,11 +112,17 @@ var makeNegative = function(number) {
 }
 
 var numberOfPalindromes = function(array) {
-    return array;
+    var resultArray = [];
+    for (i = 0; i < array.length; i++) {
+        if (array[i].charAt(0) == array[i].substring(array[i].length-1)) {
+            resultArray.push(array[i]);
+        }
+    }
+    return resultArray.length;
 }
 
 var shortestWord = function(array) {
-    return 'Write your method here';
+    return array;
 }
 
 var longestWord = function(array) {
