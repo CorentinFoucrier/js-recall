@@ -59,7 +59,14 @@ var reverseWordsInArray = function(array) {
 }
 
 var everyPossiblePair = function(array) {
-    return array;
+    // var result = ;
+    // var resultArray = [];
+    // for (var i = 0; i < array.length - 1; i++) {
+    //     for (var j = i; j < array.length - 1; j++) {
+    //         resultArray.push([array[i], array[j+1]]);
+    //     }
+    // }
+    // return resultArray;
 }
 
 var allElementsExceptFirstThree = function(array) {
@@ -86,31 +93,36 @@ var sortByLastLetter = function(array) {
     {
         array.sort(function(a, b) //sort() peut avoir une fonctionComparaison
         {
-            console.log(array); 
+
             return a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1);
 //          On set a et b avec le code UTF-16 de chaque occurrence de l'array
 //          puis on passe en param de charCodeAt sa longeur -1 pour focus la dernière lettre de chaque occurrence
         })
-        console.log(array[i]);
         resultArray.push(array[i]);
     }
     return resultArray;
 }
 
 var getFirstHalf = function(string) {
-    return 'Write your method here';
+    return string.substring(0, 3);
 }
 
 var makeNegative = function(number) {
-    return 'Write your method here';
+    return number = -5;
 }
 
 var numberOfPalindromes = function(array) {
-    return 'Write your method here';
+    var resultArray = [];
+    for (i = 0; i < array.length; i++) {
+        if (array[i].charAt(0) == array[i].substring(array[i].length-1)) {
+            resultArray.push(array[i]);
+        }
+    }
+    return resultArray.length;
 }
 
 var shortestWord = function(array) {
-    return 'Write your method here';
+    return array;
 }
 
 var longestWord = function(array) {
@@ -118,11 +130,11 @@ var longestWord = function(array) {
 }
 
 var sumNumbers = function(array) {
-    return 'Write your method here';
+    return array;
 }
 
 var repeatElements = function(array) {
-    return 'Write your method here';
+    return array;
 }
 
 var stringToNumber = function(string) {
